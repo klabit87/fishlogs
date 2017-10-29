@@ -1,0 +1,720 @@
+PID   COMMAND          COMMAND
+    1 init             /init --second-stage
+    2 kthreadd         [kthreadd]
+    3 ksoftirqd/0      [ksoftirqd/0]
+    4 kworker/0:0      [kworker/0:0]
+    5 kworker/0:0H     [kworker/0:0H]
+    6 kworker/u8:0     [kworker/u8:0]
+    7 rcu_preempt      [rcu_preempt]
+    8 rcu_sched        [rcu_sched]
+    9 rcu_bh           [rcu_bh]
+   10 migration/0      [migration/0]
+   11 watchdog/0       [watchdog/0]
+   12 watchdog/1       [watchdog/1]
+   13 migration/1      [migration/1]
+   14 ksoftirqd/1      [ksoftirqd/1]
+   15 kworker/1:0      [kworker/1:0]
+   16 kworker/1:0H     [kworker/1:0H]
+   17 watchdog/2       [watchdog/2]
+   18 migration/2      [migration/2]
+   19 ksoftirqd/2      [ksoftirqd/2]
+   20 kworker/2:0      [kworker/2:0]
+   21 kworker/2:0H     [kworker/2:0H]
+   22 watchdog/3       [watchdog/3]
+   23 migration/3      [migration/3]
+   24 ksoftirqd/3      [ksoftirqd/3]
+   25 kworker/3:0      [kworker/3:0]
+   26 kworker/3:0H     [kworker/3:0H]
+   27 khelper          [khelper]
+   28 netns            [netns]
+   29 perf             [perf]
+   30 smd_channel_clo  [smd_channel_clo]
+   31 dsps_smd_trans_  [dsps_smd_trans_]
+   32 lpass_smd_trans  [lpass_smd_trans]
+   33 mpss_smd_trans_  [mpss_smd_trans_]
+   34 wcnss_smd_trans  [wcnss_smd_trans]
+   35 rpm_smd_trans_g  [rpm_smd_trans_g]
+   36 msm_watchdog     [msm_watchdog]
+   37 kworker/1:1      [kworker/1:1]
+   38 rpm_requests     [rpm_requests]
+   39 smem_native_mps  [smem_native_mps]
+   40 mpss_smem_glink  [mpss_smem_glink]
+   41 smem_native_lpa  [smem_native_lpa]
+   42 lpass_smem_glin  [lpass_smem_glin]
+   43 smem_native_dsp  [smem_native_dsp]
+   44 dsps_smem_glink  [dsps_smem_glink]
+   45 smem_native_rpm  [smem_native_rpm]
+   46 rpm_smem_glink_  [rpm_smem_glink_]
+   47 kworker/0:1      [kworker/0:1]
+   48 kworker/u8:1     [kworker/u8:1]
+   49 deferwq          [deferwq]
+   50 irq/114-cpr3     [irq/114-cpr3]
+   51 irq/115-cpr3_ce  [irq/115-cpr3_ce]
+   52 irq/116-cpr3     [irq/116-cpr3]
+   53 mpm              [mpm]
+   54 kworker/u8:2     [kworker/u8:2]
+   55 kworker/u8:3     [kworker/u8:3]
+   74 writeback        [writeback]
+   75 crypto           [crypto]
+   76 bioset           [bioset]
+   77 kblockd          [kblockd]
+   84 irq/247-max7785  [irq/247-max7785]
+   91 system           [system]
+   92 camera_preview   [camera_preview]
+   93 kworker/2:1      [kworker/2:1]
+   94 ipa_power_mgmt   [ipa_power_mgmt]
+   95 sps_ipa_power_m  [sps_ipa_power_m]
+   96 kworker/u9:0     [kworker/u9:0]
+   97 ipawq14          [ipawq14]
+   98 iparepwq14       [iparepwq14]
+   99 kworker/u9:1     [kworker/u9:1]
+  100 ipawq47          [ipawq47]
+  101 iparepwq47       [iparepwq47]
+  102 ipawq13          [ipawq13]
+  103 iparepwq13       [iparepwq13]
+  104 ipa_rm_wq        [ipa_rm_wq]
+  105 ipa_interrupt_w  [ipa_interrupt_w]
+  106 ipa_holb_wq      [ipa_holb_wq]
+  107 irq/135-arm-smm  [irq/135-arm-smm]
+  108 irq/139-arm-smm  [irq/139-arm-smm]
+  109 irq/142-arm-smm  [irq/142-arm-smm]
+  110 irq/145-arm-smm  [irq/145-arm-smm]
+  111 irq/153-arm-smm  [irq/153-arm-smm]
+  112 irq/156-arm-smm  [irq/156-arm-smm]
+  113 irq/159-arm-smm  [irq/159-arm-smm]
+  114 irq/163-arm-smm  [irq/163-arm-smm]
+  115 irq/176-arm-smm  [irq/176-arm-smm]
+  116 irq/184-arm-smm  [irq/184-arm-smm]
+  117 irq/189-arm-smm  [irq/189-arm-smm]
+  118 devfreq_wq       [devfreq_wq]
+  119 governor_msm_ad  [governor_msm_ad]
+  120 cfg80211         [cfg80211]
+  133 power_off_alarm  [power_off_alarm]
+  134 kswapd0          [kswapd0]
+  135 fsnotify_mark    [fsnotify_mark]
+  136 ecryptfs-kthrea  [ecryptfs-kthrea]
+  192 ad_calc_wq       [ad_calc_wq]
+  193 rot_workq_0      [rot_workq_0]
+  194 rot_workq_1      [rot_workq_1]
+  195 mdss_dsi_event   [mdss_dsi_event]
+  196 mdss_dsi_dba     [mdss_dsi_dba]
+  197 mdss_dsi_dba     [mdss_dsi_dba]
+  198 irq/521-esd_rec  [irq/521-esd_rec]
+  199 irq/522-esd_rec  [irq/522-esd_rec]
+  200 glink_ssr_wq     [glink_ssr_wq]
+  201 glink_lbsrv      [glink_lbsrv]
+  202 glink_xprt_wq    [glink_xprt_wq]
+  203 IPCRTR_mpss_smd  [IPCRTR_mpss_smd]
+  204 IPCRTR_lpass_sm  [IPCRTR_lpass_sm]
+  205 IPCRTR           [IPCRTR]
+  206 IPCRTR_dsps_smd  [IPCRTR_dsps_smd]
+  207 IPCRTR           [IPCRTR]
+  208 IPCRTR           [IPCRTR]
+  209 apr_driver       [apr_driver]
+  210 glink_pkt_wq     [glink_pkt_wq]
+  211 k_hsuart         [k_hsuart]
+  212 msm_serial_hs_0  [msm_serial_hs_0]
+  213 msm_serial_hs_0  [msm_serial_hs_0]
+  214 hwrng            [hwrng]
+  216 diag_real_time_  [diag_real_time_]
+  217 diag_wq          [diag_wq]
+  218 DIAG_USB_diag    [DIAG_USB_diag]
+  219 diag_cntl_wq     [diag_cntl_wq]
+  220 diag_dci_wq      [diag_dci_wq]
+  221 DIAG_SMD_MODEM_  [DIAG_SMD_MODEM_]
+  222 DIAG_SMD_MODEM_  [DIAG_SMD_MODEM_]
+  223 DIAG_SMD_MODEM_  [DIAG_SMD_MODEM_]
+  224 DIAG_SMD_MODEM_  [DIAG_SMD_MODEM_]
+  225 DIAG_SMD_MODEM_  [DIAG_SMD_MODEM_]
+  226 DIAG_SMD_LPASS_  [DIAG_SMD_LPASS_]
+  227 DIAG_SMD_LPASS_  [DIAG_SMD_LPASS_]
+  228 DIAG_SMD_LPASS_  [DIAG_SMD_LPASS_]
+  229 DIAG_SMD_LPASS_  [DIAG_SMD_LPASS_]
+  230 DIAG_SMD_LPASS_  [DIAG_SMD_LPASS_]
+  231 DIAG_SMD_WCNSS_  [DIAG_SMD_WCNSS_]
+  232 DIAG_SMD_WCNSS_  [DIAG_SMD_WCNSS_]
+  233 DIAG_SMD_WCNSS_  [DIAG_SMD_WCNSS_]
+  234 DIAG_SMD_WCNSS_  [DIAG_SMD_WCNSS_]
+  235 DIAG_SMD_WCNSS_  [DIAG_SMD_WCNSS_]
+  236 DIAG_SMD_SENSOR  [DIAG_SMD_SENSOR]
+  237 DIAG_SMD_SENSOR  [DIAG_SMD_SENSOR]
+  238 DIAG_SMD_SENSOR  [DIAG_SMD_SENSOR]
+  239 DIAG_SMD_SENSOR  [DIAG_SMD_SENSOR]
+  240 DIAG_SMD_SENSOR  [DIAG_SMD_SENSOR]
+  241 DIAG_SOCKMODEM_  [DIAG_SOCKMODEM_]
+  242 DIAG_SOCKMODEM_  [DIAG_SOCKMODEM_]
+  243 DIAG_SOCKMODEM_  [DIAG_SOCKMODEM_]
+  244 DIAG_SOCKMODEM_  [DIAG_SOCKMODEM_]
+  245 DIAG_SOCKMODEM_  [DIAG_SOCKMODEM_]
+  246 DIAG_SOCKLPASS_  [DIAG_SOCKLPASS_]
+  247 DIAG_SOCKLPASS_  [DIAG_SOCKLPASS_]
+  248 DIAG_SOCKLPASS_  [DIAG_SOCKLPASS_]
+  249 DIAG_SOCKLPASS_  [DIAG_SOCKLPASS_]
+  250 DIAG_SOCKLPASS_  [DIAG_SOCKLPASS_]
+  251 DIAG_SOCKWCNSS_  [DIAG_SOCKWCNSS_]
+  252 DIAG_SOCKWCNSS_  [DIAG_SOCKWCNSS_]
+  253 DIAG_SOCKWCNSS_  [DIAG_SOCKWCNSS_]
+  254 DIAG_SOCKWCNSS_  [DIAG_SOCKWCNSS_]
+  255 DIAG_SOCKWCNSS_  [DIAG_SOCKWCNSS_]
+  256 DIAG_SOCKSENSOR  [DIAG_SOCKSENSOR]
+  257 DIAG_SOCKSENSOR  [DIAG_SOCKSENSOR]
+  258 DIAG_SOCKSENSOR  [DIAG_SOCKSENSOR]
+  259 DIAG_SOCKSENSOR  [DIAG_SOCKSENSOR]
+  260 DIAG_SOCKSENSOR  [DIAG_SOCKSENSOR]
+  261 DIAG_CNTL_SOCKE  [DIAG_CNTL_SOCKE]
+  262 kgsl-workqueue   [kgsl-workqueue]
+  263 kgsl-mementry    [kgsl-mementry]
+  264 kgsl-events      [kgsl-events]
+  265 kgsl_devfreq_wq  [kgsl_devfreq_wq]
+  266 qcrypto_seq_res  [qcrypto_seq_res]
+  287 scsi_eh_0        [scsi_eh_0]
+  288 scsi_tmf_0       [scsi_tmf_0]
+  289 ufs_pm_qos_0     [ufs_pm_qos_0]
+  290 ufs_clkscaling_  [ufs_clkscaling_]
+  291 spi0             [spi0]
+  294 spi6             [spi6]
+  299 spi10            [spi10]
+  304 spi11            [spi11]
+  305 kworker/3:1      [kworker/3:1]
+  308 usbnet           [usbnet]
+  309 sharedmem_qmi_w  [sharedmem_qmi_w]
+  310 qmi_hndl0000000  [qmi_hndl0000000]
+  311 msm_ipc_router   [msm_ipc_router]
+  315 k_gserial        [k_gserial]
+  316 k_ipa_usb        [k_ipa_usb]
+  317 uether           [uether]
+  318 k_gbridge        [k_gbridge]
+  319 irq/273-abov-to  [irq/273-abov-to]
+  320 irq/332-sec_ts   [irq/332-sec_ts]
+  321 msm_vidc_worker  [msm_vidc_worker]
+  322 pm_workerq_venu  [pm_workerq_venu]
+  323 irq/146-arm-smm  [irq/146-arm-smm]
+  324 irq/147-arm-smm  [irq/147-arm-smm]
+  325 irq/148-arm-smm  [irq/148-arm-smm]
+  326 irq/149-arm-smm  [irq/149-arm-smm]
+  327 kworker/u8:4     [kworker/u8:4]
+  328 msm_cci_wq       [msm_cci_wq]
+  329 msm_cci_wq       [msm_cci_wq]
+  330 kworker/u8:5     [kworker/u8:5]
+  331 kworker/u8:6     [kworker/u8:6]
+  332 kworker/u8:7     [kworker/u8:7]
+  333 kworker/u8:8     [kworker/u8:8]
+  334 msm_cpp_workque  [msm_cpp_workque]
+  335 irq/341-rtc6213  [irq/341-rtc6213]
+  336 therm_core:noti  [therm_core:noti]
+  337 therm_core:noti  [therm_core:noti]
+  338 therm_core:noti  [therm_core:noti]
+  339 therm_core:noti  [therm_core:noti]
+  340 therm_core:noti  [therm_core:noti]
+  341 therm_core:noti  [therm_core:noti]
+  342 therm_core:noti  [therm_core:noti]
+  343 therm_core:noti  [therm_core:noti]
+  344 therm_core:noti  [therm_core:noti]
+  345 therm_core:noti  [therm_core:noti]
+  346 therm_core:noti  [therm_core:noti]
+  347 therm_core:noti  [therm_core:noti]
+  348 therm_core:noti  [therm_core:noti]
+  349 irq/98-tsens_in  [irq/98-tsens_in]
+  350 irq/99-tsens_cr  [irq/99-tsens_cr]
+  351 therm_core:noti  [therm_core:noti]
+  352 therm_core:noti  [therm_core:noti]
+  353 therm_core:noti  [therm_core:noti]
+  354 therm_core:noti  [therm_core:noti]
+  355 therm_core:noti  [therm_core:noti]
+  356 therm_core:noti  [therm_core:noti]
+  357 therm_core:noti  [therm_core:noti]
+  358 therm_core:noti  [therm_core:noti]
+  359 irq/206-tsens_i  [irq/206-tsens_i]
+  360 irq/207-tsens_c  [irq/207-tsens_c]
+  361 therm_core:noti  [therm_core:noti]
+  362 therm_core:noti  [therm_core:noti]
+  363 therm_core:noti  [therm_core:noti]
+  364 therm_core:noti  [therm_core:noti]
+  365 therm_core:noti  [therm_core:noti]
+  366 therm_core:noti  [therm_core:noti]
+  367 therm_core:noti  [therm_core:noti]
+  368 therm_core:noti  [therm_core:noti]
+  369 dm_bufio_cache   [dm_bufio_cache]
+  370 cfinteractive    [cfinteractive]
+  371 irq/26-74a4900.  [irq/26-74a4900.]
+  372 irq/25-mmc0      [irq/25-mmc0]
+  373 irq/304-74a4900  [irq/304-74a4900]
+  374 ovr_work         [ovr_work]
+  375 binder           [binder]
+  376 irq/10-spdm_bw_  [irq/10-spdm_bw_]
+  377 coagent1         [coagent1]
+  378 irq/523-jig-irq  [irq/523-jig-irq]
+  379 therm_core:noti  [therm_core:noti]
+  380 kworker/2:1H     [kworker/2:1H]
+  381 max77854-charge  [max77854-charge]
+  382 kworker/0:1H     [kworker/0:1H]
+  383 p9220_workqueue  [p9220_workqueue]
+  384 irq/524-wpd-det  [irq/524-wpd-det]
+  385 mmcqd/0          [mmcqd/0]
+  386 irq/336-wpc-irq  [irq/336-wpc-irq]
+  387 irq/328-hrm_sen  [irq/328-hrm_sen]
+  388 ss_vibrator      [ss_vibrator]
+  389 vfsspi_debug_wq  [vfsspi_debug_wq]
+  390 prox_wq          [prox_wq]
+  391 maxdsm_wq        [maxdsm_wq]
+  392 maxdsm_power_wq  [maxdsm_power_wq]
+  393 ipv6_addrconf    [ipv6_addrconf]
+  394 irq/559-adsp     [irq/559-adsp]
+  395 sysmon_wq        [sysmon_wq]
+  396 qmi_svc_event_w  [qmi_svc_event_w]
+  397 adsp             [adsp]
+  398 sys_mon          [sys_mon]
+  399 irq/591-slpi     [irq/591-slpi]
+  400 slpi             [slpi]
+  401 sys_mon          [sys_mon]
+  402 irq/527-modem    [irq/527-modem]
+  403 irq/80-hs_phy_i  [irq/80-hs_phy_i]
+  404 irq/81-ss_phy_i  [irq/81-ss_phy_i]
+  405 irq/82-msm_dwc3  [irq/82-msm_dwc3]
+  406 usb_bam_wq       [usb_bam_wq]
+  407 kworker/3:2      [kworker/3:2]
+  408 dbmdx-wq         [dbmdx-wq]
+  409 irq/251-dbmdx_s  [irq/251-dbmdx_s]
+  411 rq_stats         [rq_stats]
+  412 msm_perf:events  [msm_perf:events]
+  413 FILE_FREE        [FILE_FREE]
+  414 irq/164-arm-smm  [irq/164-arm-smm]
+  415 irq/165-arm-smm  [irq/165-arm-smm]
+  416 irq/166-arm-smm  [irq/166-arm-smm]
+  417 irq/167-arm-smm  [irq/167-arm-smm]
+  418 irq/168-arm-smm  [irq/168-arm-smm]
+  419 irq/169-arm-smm  [irq/169-arm-smm]
+  420 irq/170-arm-smm  [irq/170-arm-smm]
+  421 irq/171-arm-smm  [irq/171-arm-smm]
+  422 sb-1             [sb-1]
+  423 ngd_rx_thread1   [ngd_rx_thread1]
+  424 ngd_notify_sl1   [ngd_notify_sl1]
+  425 k_bam_data       [k_bam_data]
+  426 mtp_read_send    [mtp_read_send]
+  427 usb_notify       [usb_notify]
+  428 irq/690-certify  [irq/690-certify]
+  429 msm-core:sampli  [msm-core:sampli]
+  430 msm_thermal:hot  [msm_thermal:hot]
+  431 msm_thermal:fre  [msm_thermal:fre]
+  432 msm_thermal:the  [msm_thermal:the]
+  433 therm_core:noti  [therm_core:noti]
+  434 therm_core:noti  [therm_core:noti]
+  435 therm_core:noti  [therm_core:noti]
+  436 therm_core:noti  [therm_core:noti]
+  437 therm_core:noti  [therm_core:noti]
+  438 therm_core:noti  [therm_core:noti]
+  439 therm_core:noti  [therm_core:noti]
+  440 therm_core:noti  [therm_core:noti]
+  441 irq/113-lmh-int  [irq/113-lmh-int]
+  442 irq/687-flip_co  [irq/687-flip_co]
+  443 ipa_A7_svc       [ipa_A7_svc]
+  444 qmi_hndl0000000  [qmi_hndl0000000]
+  445 clnt_req         [clnt_req]
+  446 clnt_resp        [clnt_resp]
+  447 clnt_req         [clnt_req]
+  448 soc:battery      [soc:battery]
+  449 therm_core:noti  [therm_core:noti]
+  450 therm_core:noti  [therm_core:noti]
+  572 kworker/2:2      [kworker/2:2]
+  573 kworker/2:3      [kworker/2:3]
+  574 ueventd          /sbin/ueventd
+  575 kworker/0:2      [kworker/0:2]
+  576 kworker/0:3      [kworker/0:3]
+  579 kworker/3:1H     [kworker/3:1H]
+  580 ext4-rsv-conver  [ext4-rsv-conver]
+  583 jbd2/sda21-8     [jbd2/sda21-8]
+  584 ext4-rsv-conver  [ext4-rsv-conver]
+  586 jbd2/sda5-8      [jbd2/sda5-8]
+  587 ext4-rsv-conver  [ext4-rsv-conver]
+  589 jbd2/sda6-8      [jbd2/sda6-8]
+  590 ext4-rsv-conver  [ext4-rsv-conver]
+  591 jbd2/sdd7-8      [jbd2/sdd7-8]
+  592 ext4-rsv-conver  [ext4-rsv-conver]
+  594 jbd2/sda19-8     [jbd2/sda19-8]
+  595 ext4-rsv-conver  [ext4-rsv-conver]
+  596 logd             /system/bin/logd
+  597 logd.daemon      {logd.daemon} /system/bin/logd
+  598 logd.reader      {logd.reader} /system/bin/logd
+  599 logd.writer      {logd.writer} /system/bin/logd
+  600 logd.control     {logd.control} /system/bin/logd
+  601 kworker/1:2      [kworker/1:2]
+  602 kworker/1:3      [kworker/1:3]
+  603 debuggerd        /system/bin/debuggerd
+  604 debuggerd64      /system/bin/debuggerd64
+  605 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  623 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  624 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  625 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  626 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  627 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  628 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  653 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  662 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  663 vold             /system/bin/vold --blkid_context=u:r:blkid:s0 --blkid_untrusted_context=u:r:blkid_untrusted:s0 --fsck_context=u:r:fsck:s0 --fsck_untrusted_context=u:r:fsck_untrusted:s0
+  608 debuggerd64:sig  debuggerd64:signaller
+  609 debuggerd:sig    debuggerd:signaller
+  610 kworker/1:1H     [kworker/1:1H]
+  629 lpass_IPCRTR     [lpass_IPCRTR]
+  630 LOOPBACK         [LOOPBACK]
+  631 irq/172-arm-smm  [irq/172-arm-smm]
+  643 msm_slim_qmi_cl  [msm_slim_qmi_cl]
+  644 qmi_hndl0000000  [qmi_hndl0000000]
+  645 qmi_hndl0000000  [qmi_hndl0000000]
+  649 irq/288-wcd9xxx  [irq/288-wcd9xxx]
+  650 LOOPBACK         [LOOPBACK]
+  651 dsps_IPCRTR      [dsps_IPCRTR]
+  660 qmi_hndl0000000  [qmi_hndl0000000]
+  694 healthd          /sbin/healthd
+  698 rmt_storage      /system/bin/rmt_storage
+  905 rmt_storage      /system/bin/rmt_storage
+  906 rmt_storage      /system/bin/rmt_storage
+  907 rmt_storage      /system/bin/rmt_storage
+  908 rmt_storage      /system/bin/rmt_storage
+  699 tftp_server      /system/bin/tftp_server
+  704 pm-service       system/bin/pm-service
+  724 POSIX timer 0    {POSIX timer 0} system/bin/pm-service
+  725 POSIX timer 1    {POSIX timer 1} system/bin/pm-service
+  730 pm-service       system/bin/pm-service
+  732 Binder:704_1     {Binder:704_1} system/bin/pm-service
+  737 Binder:704_2     {Binder:704_2} system/bin/pm-service
+  708 qseecomd         /system/bin/qseecomd
+  714 lmkd             /system/bin/lmkd
+  715 servicemanager   /system/bin/servicemanager
+  718 surfaceflinger   /system/bin/surfaceflinger
+  744 Binder:718_1     {Binder:718_1} /system/bin/surfaceflinger
+  745 DispSync         {DispSync} /system/bin/surfaceflinger
+  748 Binder:718_2     {Binder:718_2} /system/bin/surfaceflinger
+  821 POSIX timer 0    {POSIX timer 0} /system/bin/surfaceflinger
+  822 EventThread      {EventThread} /system/bin/surfaceflinger
+  823 POSIX timer 1    {POSIX timer 1} /system/bin/surfaceflinger
+  825 EventThread      {EventThread} /system/bin/surfaceflinger
+  837 SDM_EventThread  {SDM_EventThread} /system/bin/surfaceflinger
+  838 surfaceflinger   /system/bin/surfaceflinger
+  839 HWC_UeventThrea  {HWC_UeventThrea} /system/bin/surfaceflinger
+  840 VSyncThread      {VSyncThread} /system/bin/surfaceflinger
+  844 EventControl     {EventControl} /system/bin/surfaceflinger
+  728 qseecomd         /system/bin/qseecomd
+  736 qseecomd         /system/bin/qseecomd
+  738 qseecomd         /system/bin/qseecomd
+  739 qseecomd         /system/bin/qseecomd
+  740 qseecomd         /system/bin/qseecomd
+  741 qseecomd         /system/bin/qseecomd
+  742 qseecomd         /system/bin/qseecomd
+  743 qseecomd         /system/bin/qseecomd
+  746 qseecomd         /system/bin/qseecomd
+  749 qseecomd         /system/bin/qseecomd
+  733 pm-proxy         /system/bin/pm-proxy
+  753 Binder:733_1     {Binder:733_1} /system/bin/pm-proxy
+  755 Binder:733_2     {Binder:733_2} /system/bin/pm-proxy
+  756 Binder:733_3     {Binder:733_3} /system/bin/pm-proxy
+  734 secure_storage_  /system/bin/secure_storage_daemon
+  769 kworker/2:2H     [kworker/2:2H]
+  774 sensors.qcom     /system/bin/sensors.qcom
+  781 sensors.qcom     /system/bin/sensors.qcom
+  782 sensors.qcom     /system/bin/sensors.qcom
+  783 sensors.qcom     /system/bin/sensors.qcom
+  786 sensors.qcom     /system/bin/sensors.qcom
+  787 sensors.qcom     /system/bin/sensors.qcom
+  845 sensors.qcom     /system/bin/sensors.qcom
+  846 sensors.qcom     /system/bin/sensors.qcom
+  776 adbd             /sbin/adbd --root_seclabel=u:r:su:s0
+  784 usb ffs open     {usb ffs open} /sbin/adbd --root_seclabel=u:r:su:s0
+  788 ->transport      {->transport} /sbin/adbd --root_seclabel=u:r:su:s0
+  789 <-transport      {<-transport} /sbin/adbd --root_seclabel=u:r:su:s0
+  777 cs               /system/bin/cs
+  785 factory.adsp     /system/bin/factory.adsp
+  793 factory.adsp     /system/bin/factory.adsp
+  794 factory.adsp     /system/bin/factory.adsp
+  795 irq/140-arm-smm  [irq/140-arm-smm]
+  799 irq/141-arm-smm  [irq/141-arm-smm]
+  802 kdmflush         [kdmflush]
+  803 bioset           [bioset]
+  807 mcDriverDaemon   /system/bin/mcDriverDaemon
+  833 mcDriverDaemon   /system/bin/mcDriverDaemon
+  834 McDaemon.Server  {McDaemon.Server} /system/bin/mcDriverDaemon
+  812 tee_irq_bh       [tee_irq_bh]
+  813 tee_scheduler    [tee_scheduler]
+  835 mdss_fb0         [mdss_fb0]
+  836 dci_thread       [dci_thread]
+  842 jbd2/dm-0-8      [jbd2/dm-0-8]
+  843 ext4-rsv-conver  [ext4-rsv-conver]
+  852 bootanimation    /system/bin/bootanimation
+  948 Binder:852_1     {Binder:852_1} /system/bin/bootanimation
+  950 Binder:852_2     {Binder:852_2} /system/bin/bootanimation
+  951 BootAnimation    {BootAnimation} /system/bin/bootanimation
+  860 auditd           /system/bin/auditd -k
+  861 kworker/3:3      [kworker/3:3]
+  862 kauditd          [kauditd]
+  869 ss_conn_daemon   /system/bin/ss_conn_daemon
+  881 ss_conn_daemon   /system/bin/ss_conn_daemon
+  882 ss_conn_daemon   /system/bin/ss_conn_daemon
+  887 ss_conn_daemon   /system/bin/ss_conn_daemon
+  888 ss_conn_daemon   /system/bin/ss_conn_daemon
+  889 ss_conn_daemon   /system/bin/ss_conn_daemon
+  870 ss_kbservice_da  /system/bin/ss_kbservice_daemon
+  871 edmaudit         /system/bin/edmaudit
+  873 drmserver        /system/bin/drmserver
+  958 Binder:873_1     {Binder:873_1} /system/bin/drmserver
+  878 sensorhubservic  /system/bin/sensorhubservice
+  924 sensorhubservic  /system/bin/sensorhubservice
+  925 sensorhubservic  /system/bin/sensorhubservice
+  996 sensorhubservic  /system/bin/sensorhubservice
+  998 sensorhubservic  /system/bin/sensorhubservice
+  999 sensorhubservic  /system/bin/sensorhubservice
+ 1000 sensorhubservic  /system/bin/sensorhubservice
+ 1001 sensorhubservic  /system/bin/sensorhubservice
+ 1002 sensorhubservic  /system/bin/sensorhubservice
+ 1003 sensorhubservic  /system/bin/sensorhubservice
+ 1004 sensorhubservic  /system/bin/sensorhubservice
+ 1005 sensorhubservic  /system/bin/sensorhubservice
+ 1006 sensorhubservic  /system/bin/sensorhubservice
+ 1007 sensorhubservic  /system/bin/sensorhubservice
+ 1008 sensorhubservic  /system/bin/sensorhubservice
+ 1009 sensorhubservic  /system/bin/sensorhubservice
+ 1010 sensorhubservic  /system/bin/sensorhubservice
+ 1011 sensorhubservic  /system/bin/sensorhubservice
+ 1012 sensorhubservic  /system/bin/sensorhubservice
+ 1013 sensorhubservic  /system/bin/sensorhubservice
+ 1014 sensorhubservic  /system/bin/sensorhubservice
+ 1015 sensorhubservic  /system/bin/sensorhubservice
+ 1016 sensorhubservic  /system/bin/sensorhubservice
+ 1017 sensorhubservic  /system/bin/sensorhubservice
+ 1018 sensorhubservic  /system/bin/sensorhubservice
+ 1019 sensorhubservic  /system/bin/sensorhubservice
+ 1020 sensorhubservic  /system/bin/sensorhubservice
+ 1021 sensorhubservic  /system/bin/sensorhubservice
+ 1022 SensorHubServic  {SensorHubServic} /system/bin/sensorhubservice
+ 1023 Binder:878_1     {Binder:878_1} /system/bin/sensorhubservice
+  879 apaservice       /system/bin/apaservice
+  978 Binder:879_1     {Binder:879_1} /system/bin/apaservice
+  884 jackservice      /system/bin/jackservice
+ 1057 Binder:884_1     {Binder:884_1} /system/bin/jackservice
+  891 mpss_IPCRTR      [mpss_IPCRTR]
+  892 SSM_RTR_MODEM_A  [SSM_RTR_MODEM_A]
+  893 adsprpcd         /system/bin/adsprpcd
+  900 adsprpcd         /system/bin/adsprpcd
+  901 adsprpcd         /system/bin/adsprpcd
+  895 Binder:895_2     {Binder:895_2} /system/bin/bintvoutservice
+  952 Binder:895_1     {Binder:895_1} /system/bin/bintvoutservice
+  897 main             {main} zygote64
+ 1276 ReferenceQueueD  {ReferenceQueueD} zygote64
+ 1277 FinalizerDaemon  {FinalizerDaemon} zygote64
+ 1278 FinalizerWatchd  {FinalizerWatchd} zygote64
+ 1279 HeapTaskDaemon   {HeapTaskDaemon} zygote64
+  898 main             {main} zygote
+ 1220 ReferenceQueueD  {ReferenceQueueD} zygote
+ 1221 FinalizerDaemon  {FinalizerDaemon} zygote
+ 1222 FinalizerWatchd  {FinalizerWatchd} zygote
+ 1223 HeapTaskDaemon   {HeapTaskDaemon} zygote
+  899 imsd             /system/bin/imsd
+  982 imsd             /system/bin/imsd
+  984 imsd             /system/bin/imsd
+ 1040 imsd             /system/bin/imsd
+ 1041 imsd             /system/bin/imsd
+ 1042 imsd             /system/bin/imsd
+ 1043 Binder:899_1     {Binder:899_1} /system/bin/imsd
+  902 cellgeofenced    /system/bin/cellgeofenced
+  903 apexserver       /system/bin/apexserver
+ 1106 ApexPeepManager  {ApexPeepManager} /system/bin/apexserver
+ 1107 Binder:903_1     {Binder:903_1} /system/bin/apexserver
+  904 qmi_hndl0000000  [qmi_hndl0000000]
+  911 sdp_cryptod      /system/bin/sdp_cryptod
+ 1082 sdp_cryptod      /system/bin/sdp_cryptod
+  912 audioserver      /system/bin/audioserver
+ 1053 ApmTone          {ApmTone} /system/bin/audioserver
+ 1054 ApmAudio         {ApmAudio} /system/bin/audioserver
+ 1055 ApmOutput        {ApmOutput} /system/bin/audioserver
+ 1230 audioserver      /system/bin/audioserver
+ 1234 AudioOut_D       {AudioOut_D} /system/bin/audioserver
+ 1235 FastMixer        {FastMixer} /system/bin/audioserver
+ 1236 AudioOut_15      {AudioOut_15} /system/bin/audioserver
+ 1244 audioserver      /system/bin/audioserver
+ 1245 audioserver      /system/bin/audioserver
+ 1250 Binder:912_1     {Binder:912_1} /system/bin/audioserver
+ 1265 Binder:912_2     {Binder:912_2} /system/bin/audioserver
+  914 cameraserver     /system/bin/cameraserver
+ 1706 Binder:914_1     {Binder:914_1} /system/bin/cameraserver
+  915 ddexe            /system/bin/ddexe
+  928 ddexe            /system/bin/ddexe
+  947 ddexe            /system/bin/ddexe
+ 1962 ddexe            /system/bin/ddexe
+ 2321 ddexe            /system/bin/ddexe
+  916 connfwexe        /system/bin/connfwexe
+  946 connfwexe        /system/bin/connfwexe
+  918 rild             /system/bin/rild
+ 1029 rild             /system/bin/rild
+ 1034 rild             /system/bin/rild
+ 1049 Binder:918_1     {Binder:918_1} /system/bin/rild
+ 1050 rild             /system/bin/rild
+ 1051 rild             /system/bin/rild
+ 1052 Binder:918_2     {Binder:918_2} /system/bin/rild
+ 1329 rild             /system/bin/rild
+ 2202 rild             /system/bin/rild
+ 2203 rild             /system/bin/rild
+ 2204 rild             /system/bin/rild
+ 2207 rild             /system/bin/rild
+ 2211 rild             /system/bin/rild
+ 2212 rild             /system/bin/rild
+ 2277 rild             /system/bin/rild
+ 2279 rild             /system/bin/rild
+ 2287 rild             /system/bin/rild
+ 2288 rild             /system/bin/rild
+ 2293 rild             /system/bin/rild
+  920 LOOPBACK         [LOOPBACK]
+  921 diag_uart_log    /system/bin/diag_uart_log
+  922 qmi_hndl0000000  [qmi_hndl0000000]
+  923 smdexe           /system/bin/smdexe
+ 1958 smdexe           /system/bin/smdexe
+ 1959 smdexe           /system/bin/smdexe
+ 1960 smdexe           /system/bin/smdexe
+ 1961 smdexe           /system/bin/smdexe
+  926 installd         /system/bin/installd
+  927 kworker/u8:9     [kworker/u8:9]
+  930 keystore         /system/bin/keystore /data/misc/keystore
+  932 mediacodec       {mediacodec} media.codec mediacodec
+ 1060 Binder:932_1     {Binder:932_1} media.codec mediacodec
+ 1296 Binder:932_2     {Binder:932_2} media.codec mediacodec
+ 1556 Binder:932_3     {Binder:932_3} media.codec mediacodec
+  933 mediadrmserver   /system/bin/mediadrmserver
+ 1066 Binder:933_1     {Binder:933_1} /system/bin/mediadrmserver
+  934 mediaextractor   {mediaextractor} media.extractor aextractor
+ 1069 Binder:934_1     {Binder:934_1} media.extractor aextractor
+  935 mediaserver      /system/bin/mediaserver
+ 1830 Binder:935_1     {Binder:935_1} /system/bin/mediaserver
+ 1832 Binder:935_2     {Binder:935_2} /system/bin/mediaserver
+  938 Binder:938_2     {Binder:938_2} /system/bin/netd
+ 2338 netd             /system/bin/netd
+ 2339 netd             /system/bin/netd
+ 2342 netd             /system/bin/netd
+ 2343 netd             /system/bin/netd
+ 2344 netd             /system/bin/netd
+ 2345 netd             /system/bin/netd
+ 2346 netd             /system/bin/netd
+ 2347 Binder:938_1     {Binder:938_1} /system/bin/netd
+ 2348 Binder:938_2     {Binder:938_2} /system/bin/netd
+  940 bootchecker      /system/bin/bootchecker
+  941 loc_launcher     /system/bin/loc_launcher
+  964 loc_launcher     /system/bin/loc_launcher
+  943 ATFWD-daemon     /system/bin/ATFWD-daemon
+  969 ATFWD-daemon     /system/bin/ATFWD-daemon
+ 1726 ATFWD-daemon     /system/bin/ATFWD-daemon
+  944 dhd_watchdog_th  [dhd_watchdog_th]
+  945 dhd_rpm_state_t  [dhd_rpm_state_t]
+  954 mm-qcamera-daem  /system/bin/mm-qcamera-daemon
+ 1472 mm-qcamera-daem  /system/bin/mm-qcamera-daemon
+ 1473 mm-qcamera-daem  /system/bin/mm-qcamera-daemon
+ 1474 mm-qcamera-daem  /system/bin/mm-qcamera-daemon
+ 1475 mm-qcamera-daem  /system/bin/mm-qcamera-daemon
+ 1476 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1479 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1480 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1482 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1483 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1486 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1487 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1490 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1491 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1493 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1494 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1496 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1497 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1498 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1500 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1501 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1504 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1505 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1508 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1509 CAM_imgTh        {CAM_imgTh} /system/bin/mm-qcamera-daemon
+ 1520 POSIX timer 0    {POSIX timer 0} /system/bin/mm-qcamera-daemon
+  955 fingerprintd     /system/bin/fingerprintd
+  956 time_daemon      /system/bin/time_daemon
+  973 time_daemon      /system/bin/time_daemon
+  974 time_daemon      /system/bin/time_daemon
+  975 time_daemon      /system/bin/time_daemon
+  977 time_daemon      /system/bin/time_daemon
+  981 time_daemon      /system/bin/time_daemon
+  957 audiod           /system/bin/audiod
+  986 Binder:957_1     {Binder:957_1} /system/bin/audiod
+  987 AudioDaemon      {AudioDaemon} /system/bin/audiod
+  961 gatekeeperd      /system/bin/gatekeeperd /data/misc/gatekeeper
+  962 at_distributor   /system/bin/at_distributor
+ 2320 at_distributor   /system/bin/at_distributor
+  971 irq/154-arm-smm  [irq/154-arm-smm]
+  976 irq/157-arm-smm  [irq/157-arm-smm]
+  979 irq/155-arm-smm  [irq/155-arm-smm]
+  983 irq/158-arm-smm  [irq/158-arm-smm]
+  995 qmuxd            /system/bin/qmuxd
+ 1039 qmuxd            /system/bin/qmuxd
+ 1253 qmuxd            /system/bin/qmuxd
+ 1026 ipacm-diag       /system/bin/ipacm-diag
+ 1038 ipacm-diag       /system/bin/ipacm-diag
+ 1046 ipacm            /system/bin/ipacm
+ 1071 ipacm            /system/bin/ipacm
+ 1072 netlink socket   {netlink socket} /system/bin/ipacm
+ 1073 ipa driver ntfy  {ipa driver ntfy} /system/bin/ipacm
+ 1056 androidshmservi  androidshmservice
+ 1068 Binder:1056_1    {Binder:1056_1} androidshmservice
+ 1058 DS               [DS]
+ 1059 DATA1            [DATA1]
+ 1061 DATA2            [DATA2]
+ 1062 DATA3            [DATA3]
+ 1063 DATA4            [DATA4]
+ 1064 DATA11           [DATA11]
+ 1087 netmgrd          /system/bin/netmgrd
+ 1099 netmgrd          /system/bin/netmgrd
+ 1100 netmgrd          /system/bin/netmgrd
+ 1110 netmgrd          /system/bin/netmgrd
+ 1112 netmgrd          /system/bin/netmgrd
+ 1113 netmgrd          /system/bin/netmgrd
+ 1241 netmgrd          /system/bin/netmgrd
+ 1242 netmgrd          /system/bin/netmgrd
+ 1243 netmgrd          /system/bin/netmgrd
+ 1188 loop0            [loop0]
+ 1192 jbd2/loop0-8     [jbd2/loop0-8]
+ 1193 ext4-rsv-conver  [ext4-rsv-conver]
+ 1247 DATA5_CNTL       [DATA5_CNTL]
+ 1275 system_server    system_server
+ 1282 Signal Catcher   {Signal Catcher} system_server
+ 1283 JDWP             {JDWP} system_server
+ 1284 ReferenceQueueD  {ReferenceQueueD} system_server
+ 1285 FinalizerDaemon  {FinalizerDaemon} system_server
+ 1286 FinalizerWatchd  {FinalizerWatchd} system_server
+ 1287 HeapTaskDaemon   {HeapTaskDaemon} system_server
+ 1679 Binder:1275_1    {Binder:1275_1} system_server
+ 1682 Binder:1275_2    {Binder:1275_2} system_server
+ 1717 system_server    system_server
+ 1732 android.bg       {android.bg} system_server
+ 1733 ActivityManager  {ActivityManager} system_server
+ 1734 android.ui       {android.ui} system_server
+ 1737 ActivityManager  {ActivityManager} system_server
+ 1739 batterystats-sy  {batterystats-sy} system_server
+ 1791 FileObserver     {FileObserver} system_server
+ 1795 MARsDBThread     {MARsDBThread} system_server
+ 1798 android.fg       {android.fg} system_server
+ 1799 android.io       {android.io} system_server
+ 1800 android.display  {android.display} system_server
+ 1802 CpuTracker       {CpuTracker} system_server
+ 1806 PowerManagerSer  {PowerManagerSer} system_server
+ 1807 [smart stay]     {[smart stay] } system_server
+ 1808 system_server    system_server
+ 1809 BatteryStats_wa  {BatteryStats_wa} system_server
+ 1810 mSvcLEDThread    {mSvcLEDThread} system_server
+ 1814 PmsDisplayThrea  {PmsDisplayThrea} system_server
+ 1843 PackageManager   {PackageManager} system_server
+ 1845 EMPackageHandle  {EMPackageHandle} system_server
+ 1898 packagescan-1    {packagescan-1} system_server
+ 1900 packagescan-2    {packagescan-2} system_server
+ 1901 packagescan-3    {packagescan-3} system_server
+ 1911 packagescan-4    {packagescan-4} system_server
+ 1912 packagescan-5    {packagescan-5} system_server
+ 1914 packagescan-6    {packagescan-6} system_server
+ 1308 daemonsu         daemonsu:mount:master
+ 1413 ipawq48          [ipawq48]
+ 1414 iparepwq48       [iparepwq48]
+ 1568 daemonsu         daemonsu:master
+ 1584 daemonsu         daemonsu:su.d r
+ 1646 sush             {sush} sh -c for i in $(ls /system/su.d/); do log -p i -t su.d Running /system/su.d/$i; /system/su.d/$i; done;
+ 1917 sh               /system/bin/sh /res/fish/FIsH
+ 1924 soundserver      {soundserver} /system/bin/sh /system/su.d/soundserver
+ 2369 supolicy_wrappe  /su/bin/supolicy_wrapped --live allow audioserver audioserver_tmpfs file { execute }
+ 2376 busybox          /res/fish/busybox ps -T -o pid,comm,args
