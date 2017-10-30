@@ -1,24 +1,24 @@
-2017-10-29 02:34:39: ### moving busybox and FIsH..
-2017-10-29 02:34:39: /system/fish/busybox mount -oremount,rw /
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: [ -d /res/fish ]
-2017-10-29 02:34:39: RET=1
-2017-10-29 02:34:39: cd /
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: /system/fish/busybox mkdir /res
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: /system/fish/busybox mkdir /res/fish
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: /system/fish/busybox cp -vf /system/fish/FIsH /system/fish/FIsH.me /system/fish/FIsH.porting /system/fish/busybox /system/fish/callmeFIsH /system/fish/fishfood.gz /system/fish/fishfood.release /res/fish/
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: /system/fish/busybox chown -R 0.0 /res/fish/
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: /system/fish/busybox chmod -R 0777 /res/fish/
-2017-10-29 02:34:39: RET=0
-2017-10-29 02:34:39: ### calling the FIsH and exit
-2017-10-29 02:34:39 - /res/fish/FIsH loaded
-2017-10-29 02:34:39 - Detected versions:
-	FIsH: v3.3
+2017-10-29 23:09:47: ### moving busybox and FIsH..
+2017-10-29 23:09:47: /system/fish/busybox mount -oremount,rw /
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: [ -d /res/fish ]
+2017-10-29 23:09:47: RET=1
+2017-10-29 23:09:47: cd /
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: /system/fish/busybox mkdir /res
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: /system/fish/busybox mkdir /res/fish
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: /system/fish/busybox cp -vf /system/fish/FIsH /system/fish/FIsH.me /system/fish/FIsH.porting /system/fish/busybox /system/fish/callmeFIsH /system/fish/fishfood.gz /system/fish/fishfood.release /res/fish/
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: /system/fish/busybox chown -R 0.0 /res/fish/
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: /system/fish/busybox chmod -R 0777 /res/fish/
+2017-10-29 23:09:47: RET=0
+2017-10-29 23:09:47: ### calling the FIsH and exit
+2017-10-29 23:09:47 - /res/fish/FIsH loaded
+2017-10-29 23:09:47 - Detected versions:
+	FIsH: v3.3-1
 	FIsHFOOD: TWRP-in-FIsH-v1.0_SMG930V_N
 	Android: 7.0
 	Release level: 7.0_r4
@@ -26,5 +26,5 @@
 	Fingerprint: Verizon/hero2qltevzw/hero2qltevzw:7.0/NRD90M/G935VVRU4BQA4:user/release-keys
 	SDK Level: 24
 	SU version: 282
-2017-10-29 02:34:39 - booted selinux mode <Enforcing>
-2017-10-29 02:34:39 - selinux is now: <Permissive>
+2017-10-29 23:09:47 - booted selinux mode <Enforcing>
+2017-10-29 23:09:47 - selinux is now: <Permissive>
